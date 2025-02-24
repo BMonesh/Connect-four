@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+h1 {
+  font-size: 2em;
+  color: #333;
+}
+
+.result-message {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.player-indicator {
+  color: red;
+  font-weight: bold;
+}
+
+#reset-btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  margin-top: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#reset-btn:hover {
+  background: #0056b3;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 60px);
+  grid-gap: 5px;
+  justify-content: center;
+  margin: 20px auto;
+  width: fit-content;
+}
+
+.grid div {
+  height: 60px;
+  width: 60px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  background-color: #ddd;
+  transition: background-color 0.3s ease;
+}
+
+.player-one {
+  background-color: red !important;
+}
+
+.player-two {
+  background-color: blue !important;
+}
+
+.taken {
+  pointer-events: none;
+}
